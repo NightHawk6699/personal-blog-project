@@ -1,0 +1,770 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>Welcome to the brotherhood</title>
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<link href="css/font-awesome.min.css" rel="stylesheet">
+		<link href="css/owl.carousel.css" rel="stylesheet">
+		<link href="css/owl.theme.css" rel="stylesheet">
+		<link href="css/owl.transitions.css" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="css/style.css"/>
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,800italic,800,700italic,700,600italic,400italic,600,300italic,300|Oswald:400,300,700' rel='stylesheet' type='text/css'>
+		
+	</head>
+	<body data-spy = "scroll" data-target=".main-nav"><!--对导航栏加上滚动监听-->
+		<header class="st-navbar">
+			
+		    <nav class="navbar navbar-default navbar-fixed-top clearfix"> <!--添加 .navbar-fixed-top 类可以让导航条固定在顶部，还可包含一个 .container 或 .container-fluid 容器，从而让导航条居中，并在两侧添加内补（padding）。-->
+		    	<div class="container">
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#sept-main-nav"> <!--当网页宽度小于一定值时，折叠显示导航栏，collapse是折叠不显示，collapsed是显示-->
+							<span class="sr-only">Toggle navigation</span> <!--固定折叠按钮的样式-->
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+						<a class="navbar-brand" href="#"><img src="img/logo3.png" alt="" class="img-responsive"></a><!--将导航条内放置品牌标志的地方替换为 <img> 元素即可展示自己的品牌图标。由于 .navbar-brand 已经被设置了内补（padding）和高度（height），你需要根据自己的情况添加一些 CSS 代码从而覆盖默认设置。-->
+					</div>
+		
+					
+					<div class="collapse navbar-collapse main-nav" id="sept-main-nav"><!--collapse navbar-collpase是被折叠的导航栏必须添加的属性-->
+						<ul class="nav navbar-nav navbar-right">
+							<li class="active"><a href="#home">Home</a></li>
+							<li><a href="#about">About</a></li>
+							<li><a href="#service">Service</a></li>
+							<li><a href="#portfolio">Portfolio</a></li>
+							<li><a href="#pricing">Pricing</a></li>
+							<li><a href="#blog">Blog</a></li>
+							<li><a href="#contact">Contact Us</a></li>
+						</ul>
+					</div>
+			    </div>
+			</nav>
+		</header>
+		
+		<section class="home" id="home" data-stellar-background-ratio="0.4"><!--If you want an element's background image to reposition on scroll, simply add the following attribute-->
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<div class="st-home-unit">
+							<div class="hero-txt">
+								<p class="hero-work">Web Design - Web Development - UX Design</p>
+								<h2 class="hero-title">BEST Template for Agency</h2>
+								<a href="#" class="btn btn-main btn-lg">Find Out More</a>
+							</div>
+
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="mouse-icon"><div class="wheel"></div></div>
+		</section>
+		
+		<section class="about" id="about">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<div class="section-title">
+							<h3>WelCome to Hell</h3>
+							<p>We work in the dark and serve the light</p>
+						</div>
+						<div class="row mb90">
+							<div class="col-md-6">
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero illo laudantium rerum nemo mollitia neque at delectus saepe reiciendis consectetur odit voluptatibus placeat. Qui eius voluptate maiores. Iusto eveniet voluptatem.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia eius totam eveniet mollitia asperiores facere quasi quas dolorem modi officiis commodi quaerat dolor saepe nemo deleniti voluptas dignissimos reprehenderit laboriosam.</p>
+							</div>
+							<div class="col-md-6">
+								<img src="img/about.jpg" class="img-responsive"/><!--img-responsive class 为图像赋予了 max-width: 100%; 和 height: auto; 属性，可以让图像按比例缩放，不超过其父元素的尺寸。-->
+							</div>
+						</div>
+						
+						<div class="row">
+							<div class="col-md-4">
+								<div class="st-member">
+									<div class="st-member-img">
+										<img src="img/member1.png" alt="" class="img-responsive"/>
+									</div>
+									<div class="st-member-info">
+										<div class="st-member-name">Jack Ma</div>
+										<div class="st-member-pos">CEO</div>
+										<div class="skills">
+											<div class="skill">
+												<strong>HTML</strong>
+												<span>90%</span>
+												<div class="progress"><!--bootstrap进度条设置-->
+													<div class="progress-bar progress-bar-sept" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width: 90%;">
+														<span class="sr-only">90% Complete</span><!--全称是 screen reader only，意为：（仅供）屏幕阅读器，这个 class 主要用于增强 accessbility（可访问性）。有时候 UI 上会出现一些仅供视觉识别的元素，比如说“汉堡包菜单按钮”，只有视力正常的人才能清楚辨识这些元素的作用。而残障人士，比如弱势或盲人是不可能知道这些视觉识别元素是什么的。他们上网使用的是屏幕阅读器，也就是 screen reader（sr），屏幕阅读器需要找到能辨识的文本说明然后“读”出来给用户听。问题是图形元素怎么可能“读出来”呢？因此我们还要写上这些元素的文本说明，但是又不需要展示给普通用户看到，于是加上 sr-only 的意义就在于能保证屏幕阅读器正确读取且不会影响 UI 的视觉呈现。-->
+													</div>
+												</div>
+											</div>
+											<div class="skill">
+												<strong>CSS</strong>
+												<span>70%</span>
+												<div class="progress"><!--bootstrap进度条设置-->
+													<div class="progress-bar progress-bar-sept" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 70%;">
+														<span class="sr-only">70% Complete</span><!--全称是 screen reader only，意为：（仅供）屏幕阅读器，这个 class 主要用于增强 accessbility（可访问性）。有时候 UI 上会出现一些仅供视觉识别的元素，比如说“汉堡包菜单按钮”，只有视力正常的人才能清楚辨识这些元素的作用。而残障人士，比如弱势或盲人是不可能知道这些视觉识别元素是什么的。他们上网使用的是屏幕阅读器，也就是 screen reader（sr），屏幕阅读器需要找到能辨识的文本说明然后“读”出来给用户听。问题是图形元素怎么可能“读出来”呢？因此我们还要写上这些元素的文本说明，但是又不需要展示给普通用户看到，于是加上 sr-only 的意义就在于能保证屏幕阅读器正确读取且不会影响 UI 的视觉呈现。-->
+													</div>
+												</div>
+											</div>
+											<div class="skill">
+												<strong>JavaScript</strong>
+												<span>86%</span>
+												<div class="progress"><!--bootstrap进度条设置-->
+													<div class="progress-bar progress-bar-sept" role="progressbar" aria-valuenow="86" aria-valuemin="0" aria-valuemax="100" style="width: 90%;">
+														<span class="sr-only">86% Complete</span><!--全称是 screen reader only，意为：（仅供）屏幕阅读器，这个 class 主要用于增强 accessbility（可访问性）。有时候 UI 上会出现一些仅供视觉识别的元素，比如说“汉堡包菜单按钮”，只有视力正常的人才能清楚辨识这些元素的作用。而残障人士，比如弱势或盲人是不可能知道这些视觉识别元素是什么的。他们上网使用的是屏幕阅读器，也就是 screen reader（sr），屏幕阅读器需要找到能辨识的文本说明然后“读”出来给用户听。问题是图形元素怎么可能“读出来”呢？因此我们还要写上这些元素的文本说明，但是又不需要展示给普通用户看到，于是加上 sr-only 的意义就在于能保证屏幕阅读器正确读取且不会影响 UI 的视觉呈现。-->
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="st-member-social">
+											<ul>
+												<li><a href="#" class="facebook" data-toggle="tooltip" data-placement="top" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+												<li><a href="#" class="twitter" data-toggle="tooltip" data-placement="top" title="Twitter"><i class="fa fa-twitter"></i></a></li>
+												<li><a href="#" class="dribbble" data-toggle="tooltip" data-placement="top" title="Dribbble"><i class="fa fa-dribbble"></i></a></li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-4">
+								<div class="st-member">
+									<div class="st-member-img">
+										<img src="img/member2.png" alt="" class="img-responsive"/>
+									</div>
+									<div class="st-member-info">
+										<div class="st-member-name">Sarah Shaw</div>
+										<div class="st-member-pos">Designer</div>
+										<div class="skills">
+											<div class="skill">
+												<strong>HTML</strong>
+												<span>90%</span>
+												<div class="progress"><!--bootstrap进度条设置-->
+													<div class="progress-bar progress-bar-sept" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width: 90%;">
+														<span class="sr-only">90% Complete</span><!--全称是 screen reader only，意为：（仅供）屏幕阅读器，这个 class 主要用于增强 accessbility（可访问性）。有时候 UI 上会出现一些仅供视觉识别的元素，比如说“汉堡包菜单按钮”，只有视力正常的人才能清楚辨识这些元素的作用。而残障人士，比如弱势或盲人是不可能知道这些视觉识别元素是什么的。他们上网使用的是屏幕阅读器，也就是 screen reader（sr），屏幕阅读器需要找到能辨识的文本说明然后“读”出来给用户听。问题是图形元素怎么可能“读出来”呢？因此我们还要写上这些元素的文本说明，但是又不需要展示给普通用户看到，于是加上 sr-only 的意义就在于能保证屏幕阅读器正确读取且不会影响 UI 的视觉呈现。-->
+													</div>
+												</div>
+											</div>
+											<div class="skill">
+												<strong>CSS</strong>
+												<span>70%</span>
+												<div class="progress"><!--bootstrap进度条设置-->
+													<div class="progress-bar progress-bar-sept" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 70%;">
+														<span class="sr-only">70% Complete</span><!--全称是 screen reader only，意为：（仅供）屏幕阅读器，这个 class 主要用于增强 accessbility（可访问性）。有时候 UI 上会出现一些仅供视觉识别的元素，比如说“汉堡包菜单按钮”，只有视力正常的人才能清楚辨识这些元素的作用。而残障人士，比如弱势或盲人是不可能知道这些视觉识别元素是什么的。他们上网使用的是屏幕阅读器，也就是 screen reader（sr），屏幕阅读器需要找到能辨识的文本说明然后“读”出来给用户听。问题是图形元素怎么可能“读出来”呢？因此我们还要写上这些元素的文本说明，但是又不需要展示给普通用户看到，于是加上 sr-only 的意义就在于能保证屏幕阅读器正确读取且不会影响 UI 的视觉呈现。-->
+													</div>
+												</div>
+											</div>
+											<div class="skill">
+												<strong>JavaScript</strong>
+												<span>86%</span>
+												<div class="progress"><!--bootstrap进度条设置-->
+													<div class="progress-bar progress-bar-sept" role="progressbar" aria-valuenow="86" aria-valuemin="0" aria-valuemax="100" style="width: 90%;">
+														<span class="sr-only">86% Complete</span><!--全称是 screen reader only，意为：（仅供）屏幕阅读器，这个 class 主要用于增强 accessbility（可访问性）。有时候 UI 上会出现一些仅供视觉识别的元素，比如说“汉堡包菜单按钮”，只有视力正常的人才能清楚辨识这些元素的作用。而残障人士，比如弱势或盲人是不可能知道这些视觉识别元素是什么的。他们上网使用的是屏幕阅读器，也就是 screen reader（sr），屏幕阅读器需要找到能辨识的文本说明然后“读”出来给用户听。问题是图形元素怎么可能“读出来”呢？因此我们还要写上这些元素的文本说明，但是又不需要展示给普通用户看到，于是加上 sr-only 的意义就在于能保证屏幕阅读器正确读取且不会影响 UI 的视觉呈现。-->
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="st-member-social">
+											<ul>
+												<li><a href="#" class="facebook" data-toggle="tooltip" data-placement="top" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+												<li><a href="#" class="twitter" data-toggle="tooltip" data-placement="top" title="Twitter"><i class="fa fa-twitter"></i></a></li>
+												<li><a href="#" class="dribbble" data-toggle="tooltip" data-placement="top" title="Dribbble"><i class="fa fa-dribbble"></i></a></li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-4">
+								<div class="st-member">
+									<div class="st-member-img">
+										<img src="img/member3.png" alt="" class="img-responsive"/>
+									</div>
+									<div class="st-member-info">
+										<div class="st-member-name">Root</div>
+										<div class="st-member-pos">Developer</div>
+										<div class="skills">
+											<div class="skill">
+												<strong>HTML</strong>
+												<span>90%</span>
+												<div class="progress"><!--bootstrap进度条设置-->
+													<div class="progress-bar progress-bar-sept" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width: 90%;">
+														<span class="sr-only">90% Complete</span><!--全称是 screen reader only，意为：（仅供）屏幕阅读器，这个 class 主要用于增强 accessbility（可访问性）。有时候 UI 上会出现一些仅供视觉识别的元素，比如说“汉堡包菜单按钮”，只有视力正常的人才能清楚辨识这些元素的作用。而残障人士，比如弱势或盲人是不可能知道这些视觉识别元素是什么的。他们上网使用的是屏幕阅读器，也就是 screen reader（sr），屏幕阅读器需要找到能辨识的文本说明然后“读”出来给用户听。问题是图形元素怎么可能“读出来”呢？因此我们还要写上这些元素的文本说明，但是又不需要展示给普通用户看到，于是加上 sr-only 的意义就在于能保证屏幕阅读器正确读取且不会影响 UI 的视觉呈现。-->
+													</div>
+												</div>
+											</div>
+											<div class="skill">
+												<strong>CSS</strong>
+												<span>70%</span>
+												<div class="progress"><!--bootstrap进度条设置-->
+													<div class="progress-bar progress-bar-sept" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 70%;">
+														<span class="sr-only">70% Complete</span><!--全称是 screen reader only，意为：（仅供）屏幕阅读器，这个 class 主要用于增强 accessbility（可访问性）。有时候 UI 上会出现一些仅供视觉识别的元素，比如说“汉堡包菜单按钮”，只有视力正常的人才能清楚辨识这些元素的作用。而残障人士，比如弱势或盲人是不可能知道这些视觉识别元素是什么的。他们上网使用的是屏幕阅读器，也就是 screen reader（sr），屏幕阅读器需要找到能辨识的文本说明然后“读”出来给用户听。问题是图形元素怎么可能“读出来”呢？因此我们还要写上这些元素的文本说明，但是又不需要展示给普通用户看到，于是加上 sr-only 的意义就在于能保证屏幕阅读器正确读取且不会影响 UI 的视觉呈现。-->
+													</div>
+												</div>
+											</div>
+											<div class="skill">
+												<strong>JavaScript</strong>
+												<span>86%</span>
+												<div class="progress"><!--bootstrap进度条设置-->
+													<div class="progress-bar progress-bar-sept" role="progressbar" aria-valuenow="86" aria-valuemin="0" aria-valuemax="100" style="width: 90%;">
+														<span class="sr-only">86% Complete</span><!--全称是 screen reader only，意为：（仅供）屏幕阅读器，这个 class 主要用于增强 accessbility（可访问性）。有时候 UI 上会出现一些仅供视觉识别的元素，比如说“汉堡包菜单按钮”，只有视力正常的人才能清楚辨识这些元素的作用。而残障人士，比如弱势或盲人是不可能知道这些视觉识别元素是什么的。他们上网使用的是屏幕阅读器，也就是 screen reader（sr），屏幕阅读器需要找到能辨识的文本说明然后“读”出来给用户听。问题是图形元素怎么可能“读出来”呢？因此我们还要写上这些元素的文本说明，但是又不需要展示给普通用户看到，于是加上 sr-only 的意义就在于能保证屏幕阅读器正确读取且不会影响 UI 的视觉呈现。-->
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="st-member-social">
+											<ul>
+												<li><a href="#" class="facebook" data-toggle="tooltip" data-placement="top" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+												<li><a href="#" class="twitter" data-toggle="tooltip" data-placement="top" title="Twitter"><i class="fa fa-twitter"></i></a></li>
+												<li><a href="#" class="dribbble" data-toggle="tooltip" data-placement="top" title="Dribbble"><i class="fa fa-dribbble"></i></a></li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>	
+			</div>	
+		</section>
+		
+		<section class="funfacts" data-stellar-background-ratio="0.4">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-3">
+						<div class="funfact">
+							<div class="st-funfact-icon"><i class="fa fa-briefcase"></i></div>
+							<div class="st-funfact-counter" ><span class="st-ff-count" data-from="0" data-to="6000" data-runit="1">0</span>+</div>
+							<strong class="funfact-title">Projects</strong>
+						</div>
+					</div>
+					<div class="col-md-3">
+						<div class="funfact">
+							<div class="st-funfact-icon"><i class="fa fa-clock-o"></i></div>
+							<div class="st-funfact-counter" ><span class="st-ff-count" data-from="0" data-to="8000" data-runit="1">0</span>+</div>
+							<strong class="funfact-title">Hours Work</strong>
+						</div>
+					</div>
+					<div class="col-md-3">
+						<div class="funfact">
+							<div class="st-funfact-icon"><i class="fa fa-send"></i></div>
+							<div class="st-funfact-counter" ><span class="st-ff-count" data-from="0" data-to="5000" data-runit="1">0</span>+</div>
+							<strong class="funfact-title">E-mail</strong>
+						</div>
+					</div>
+					<div class="col-md-3">
+						<div class="funfact">
+							<div class="st-funfact-icon"><i class="fa fa-magic"></i></div>
+							<div class="st-funfact-counter" ><span class="st-ff-count" data-from="0" data-to="3000" data-runit="1">0</span>+</div>
+							<strong class="funfact-title">Completed</strong>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		
+		<section class="service" id="service">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<div class="section-title st-center">
+							<h3>What we do</h3>
+							<p>We work in the dark and serve the light</p>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-3">
+							<div class="st-feature">
+								<div class="st-feature-icon"><i class="fa fa-cog"></i></div>
+								<strong class="st-feature-title">Option Panel</strong>
+								<p>Pro adiuvet, honesto foris liberiusque statuat theseo scribimus mererer percurri geometria.</p>
+							</div>
+						</div>
+						
+						<div class="col-md-3">
+							<div class="st-feature">
+								<div class="st-feature-icon"><i class="fa fa-university"></i></div>
+								<strong class="st-feature-title">Option Panel</strong>
+								<p>Pro adiuvet, honesto foris liberiusque statuat theseo scribimus mererer percurri geometria.</p>
+							</div>
+							
+						</div>
+						
+						<div class="col-md-3">
+							<div class="st-feature">
+								<div class="st-feature-icon"><i class="fa fa-comments-o"></i></div>
+								<strong class="st-feature-title">Option Panel</strong>
+								<p>Pro adiuvet, honesto foris liberiusque statuat theseo scribimus mererer percurri geometria.</p>
+							</div>
+							
+						</div>
+						
+						<div class="col-md-3">
+							<div class="st-feature">
+								<div class="st-feature-icon"><i class="fa fa-life-ring"></i></div>
+								<strong class="st-feature-title">Option Panel</strong>
+								<p>Pro adiuvet, honesto foris liberiusque statuat theseo scribimus mererer percurri geometria.</p>
+							</div>		
+						</div>
+					</div>
+					
+				</div>
+			</div>
+		</section>
+		
+		<section class="features-desc">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-5">
+						<img src="img/feature.png" alt="" class="img-responsive">
+					</div>
+					<div class="col-md-7">
+						<h3 class="bottom-line">SOME OF OUR IMPORTANT FEATURES</h3>
+						<p>Graeci decore metrodorus conturbamur nostri alii veniamus temperantia audivi, discidia optari pariter formidines nimis dissidens quosvis epicureis, iustitia inbecilloque cognoscerem remotis solet duce pondere, stoicos amaret, faciam sic reperiuntur, timeam dedocere spatio censet cernantur dicas miseram alienum. Attico fonte errem neque, causam nimium reliqui fana, duo sane consequi quos cogitarent dicant profecto.</p>
+						<a href="#" class="btn btn-main btn-lg">Read more</a>
+					</div>
+				</div>
+			</div>
+		</section>
+		
+		<section class="call-2-acction" data-stellar-background-ratio="0.4">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<div class="c2a">
+							<h2>Omnibus reliquar rebus</h2>
+							<p>Evertitur depravatum illo tamquam novum, possent intus laudatur hinc grate aristoteli per splendido soluta fabulae, ne aristippi cui deleniti nostros illud.</p>
+							<a href="#" class="btn btn-main btn-lg">Purchase Now</a>
+						</div>
+					</div>
+				</div>
+			</div>         
+		</section>
+		
+		
+		<section class="portfolio" id="portfolio">
+			<div class="container-fluid ">
+				<div class="row">
+					<div class="col-md-12 no-padding ">
+						<div class="section-title st-center">
+							<h3>What we have done</h3>
+							<p>Avocent deditum long</p>
+						</div>
+						<div class="filter mb40">
+							<form id="filter">
+							<fieldset class="group">
+								<label class="btn btn-default btn-main"><input type="radio" name="filter" value="all" checked="checked">All</label>
+								<label class="btn btn-default"><input type="radio" name="filter" value="photography">Photography</label>
+								<label class="btn btn-default"><input type="radio" name="filter" value="design">Design</label>
+								<label class="btn btn-default"><input type="radio" name="filter" value="codding">Codding</label>
+							</fieldset>
+							</form><!-- #filter -->
+						</div><!-- .filter .mb40 -->
+
+						<div class="grid">
+							<figure class="portfolio-item" data-groups='["photography"]'>
+								<img src="img/portfolio.jpg" alt=""/>
+								<figcaption>
+									<h2>Nice <span>Lily</span></h2>
+									<p>Lily likes to play with crayons and pencils</p>
+									<a href="#" class="btn btn-main"><i class="fa fa-link"></i> View more</a>
+								</figcaption>
+							</figure>
+							<figure class="portfolio-item" data-groups='["design"]'>
+								<img src="img/portfolio2.jpg" alt=""/>
+								<figcaption>
+									<h2>Nice <span>Lily</span></h2>
+									<p>Lily likes to play with crayons and pencils</p>
+									<a href="#" class="btn btn-main"><i class="fa fa-link"></i> View more</a>
+								</figcaption>
+							</figure>
+							<figure class="portfolio-item" data-groups='["photography"]'>
+								<img src="img/portfolio3.jpg" alt=""/>
+								<figcaption>
+									<h2>Nice <span>Lily</span></h2>
+									<p>Lily likes to play with crayons and pencils</p>
+									<a href="#" class="btn btn-main"><i class="fa fa-link"></i> View more</a>
+								</figcaption>
+							</figure>
+							<figure class="portfolio-item" data-groups='["design"]'>
+								<img src="img/portfolio4.jpg" alt=""/>
+								<figcaption>
+									<h2>Nice <span>Lily</span></h2>
+									<p>Lily likes to play with crayons and pencils</p>
+									<a href="#" class="btn btn-main"><i class="fa fa-link"></i> View more</a>
+								</figcaption>
+							</figure>
+							<figure class="portfolio-item" data-groups='["design"]'>
+								<img src="img/portfolio5.jpg" alt=""/>
+								<figcaption>
+									<h2>Nice <span>Lily</span></h2>
+									<p>Lily likes to play with crayons and pencils</p>
+									<a href="#" class="btn btn-main"><i class="fa fa-link"></i> View more</a>
+								</figcaption>
+							</figure>
+							<figure class="portfolio-item" data-groups='["photography"]'>
+								<img src="img/portfolio6.jpg" alt=""/>
+								<figcaption>
+									<h2>Nice <span>Lily</span></h2>
+									<p>Lily likes to play with crayons and pencils</p>
+									<a href="#" class="btn btn-main"><i class="fa fa-link"></i> View more</a>
+								</figcaption>
+							</figure>
+							<figure class="portfolio-item" data-groups='["codding"]'>
+								<img src="img/portfolio7.jpg" alt=""/>
+								<figcaption>
+									<h2>Nice <span>Lily</span></h2>
+									<p>Lily likes to play with crayons and pencils</p>
+									<a href="#" class="btn btn-main"><i class="fa fa-link"></i> View more</a>
+								</figcaption>
+							</figure>
+							<figure class="portfolio-item" data-groups='["photography"]'>
+								<img src="img/portfolio8.jpg" alt=""/>
+								<figcaption>
+									<h2>Nice <span>Lily</span></h2>
+									<p>Lily likes to play with crayons and pencils</p>
+									<a href="#" class="btn btn-main"><i class="fa fa-link"></i> View more</a>
+								</figcaption>
+							</figure>
+							<figure class="portfolio-item" data-groups='["codding"]'>
+								<img src="img/portfolio9.jpg" alt=""/>
+								<figcaption>
+									<h2>Nice <span>Lily</span></h2>
+									<p>Lily likes to play with crayons and pencils</p>
+									<a href="#" class="btn btn-main"><i class="fa fa-link"></i> View more</a>
+								</figcaption>
+							</figure>
+							<figure class="portfolio-item" data-groups='["codding"]'>
+								<img src="img/portfolio10.jpg" alt=""/>
+								<figcaption>
+									<h2>Nice <span>Lily</span></h2>
+									<p>Lily likes to play with crayons and pencils</p>
+									<a href="#" class="btn btn-main"><i class="fa fa-link"></i> View more</a>
+								</figcaption>
+							</figure>
+							<figure class="portfolio-item" data-groups='["design"]'>
+								<img src="img/portfolio11.jpg" alt=""/>
+								<figcaption>
+									<h2>Nice <span>Lily</span></h2>
+									<p>Lily likes to play with crayons and pencils</p>
+									<a href="#" class="btn btn-main"><i class="fa fa-link"></i> View more</a>
+								</figcaption>
+							</figure>
+							<figure class="portfolio-item" data-groups='["design"]'>
+								<img src="img/portfolio12.jpg" alt=""/>
+								<figcaption>
+									<h2>Nice <span>Lily</span></h2>
+									<p>Lily likes to play with crayons and pencils</p>
+									<a href="#" class="btn btn-main"><i class="fa fa-link"></i> View more</a>
+								</figcaption>
+							</figure>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</section>
+		
+		<section class="clients">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<!--<div class="section-title st-center">
+							<h3>Some Of our clients</h3>
+							<p>Avocent deditum long</p>
+						</div> -->
+						<ul class="clients-carousel">
+							<li><img src="img/client.png" class="img-responsive" alt=""></li>
+							<li><img src="img/client2.png" class="img-responsive" alt=""></li>
+							<li><img src="img/client3.png" class="img-responsive" alt=""></li>
+							<li><img src="img/client4.png" class="img-responsive" alt=""></li>
+							<li><img src="img/client5.png" class="img-responsive" alt=""></li>
+							<li><img src="img/client6.png" class="img-responsive" alt=""></li>
+							<li><img src="img/client7.png" class="img-responsive" alt=""></li>
+							<li><img src="img/client8.png" class="img-responsive" alt=""></li>
+							<li><img src="img/client9.png" class="img-responsive" alt=""></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</section>
+		
+		<section class="testimonials">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<div class="testimonials-carousel">
+							<ul>
+								<li>
+									<div class="testimonial">
+										<div class="testimonial-img">
+											<img src="img/client.jpg" alt="">
+										</div>
+										<blockquote>
+											<p>Tueri tantis inter variis deterritum facta caret pleniorem, efficiat affert quiete, commodis comparat facio ponti, adolescens recta iucundius mundi nostrum viris quae utilitatibus.</p>
+											<footer>Joseph Thompson, <cite title="Source Title">Example Inc.</cite></footer>
+										</blockquote>
+									</div>
+								</li>
+								<li>
+									<div class="testimonial">
+										<div class="testimonial-img">
+											<img src="img/client2.jpg" alt="">
+										</div>
+										<blockquote>
+											<p>Contrariis labore vetuit scaevola, contra percurri adamare efficeret quibus. Nostram consulatu mediocritatem maiorem, cyrenaicisque, quandam accedit veniat cognitioque, animadvertat accusantibus temporibus maximeque litterae.</p>
+											<footer>Nancy Ford, <cite title="Source Title">Example Inc.</cite></footer>
+										</blockquote>
+									</div>
+								</li>
+								<li>
+									<div class="testimonial">
+										<div class="testimonial-img">
+											<img src="img/client3.jpg" alt="">
+										</div>
+										<blockquote>
+											<p>Illas, volumus prosperum. Nostras eoque statua cuius corrumpit praetor aliter quaeso propter ei, quam inducitur ruant doctiores sanguinem atomum molestiae, antiqua inculta dicent.</p>
+											<footer>Arthur Fernandez, <cite title="Source Title">Example Inc.</cite></footer>
+										</blockquote>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		
+		
+		<section class="faq-sec">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<!-- <h2 class="tac">frequently asked questions</h2> -->
+						<div class="section-title st-center">
+							<h3>Some questions</h3>
+							<p>frequently asked questions</p>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-6">
+						<div class="faq">
+							<h3><i class="fa fa-question-circle"></i> Minime paulo beatus stare?</h3>
+							<p>Praesidium quaerat doloribus turpis fruuntur vocant postremo optimus utraque, veserim vitae appellant fructuosam, mediocris consistat impetu illae coniunctione modi consequentis nosque, vis qui deorum, poenis fuisse timorem ferae fastidium.</p>
+						</div>
+						<div class="faq">
+							<h3><i class="fa fa-question-circle"></i> Ferentur interrogari diceret?</h3>
+							<p>Pertinerent non importari, populo faciendi civium vetuit. Gravitate numquam praesentium fabulas. Abest ponatur ineruditus restat consoletur causam, ordiamur temperantiam repellat desistemus conquirendae molestia aiunt discenda monet.</p>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="faq">
+							<h3><i class="fa fa-question-circle"></i> Dicent erigimur secutus fortunae?</h3>
+							<p>Quarum difficilius aegritudo epularum municipem alias. Vidisse litteris, rationibus eadem, mandaremus maluisset, delectus terrore angusta deduceret numquam fidelissimae mens gravissimo propter, tradit, fastidium facta facerem qua quippiam vacuitate cupiditatum admirer navigandi.</p>
+						</div>
+						<div class="faq">
+							<h3><i class="fa fa-question-circle"></i> Molestiae dedocere effluere?</h3>
+							<p>Habeo mala nocet perpetiuntur legendos dicemus levitatibus abducat futura, occultarum probant vitae evertunt laudantium docendi difficilem, offendit concederetur tuo hortensio deserere, molita gaudemus titillaret difficilius, parum timeret unum molestiam omnis vitae.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		
+		<section class="call-us">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<h3>If you like to work with us</h3>
+						<a href="#" class="btn btn-default-o btn-lg">Call Us Now</a>
+					</div>
+				</div>
+			</div>
+		</section>
+		
+		<section class="blog" id="blog">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<div class="section-title st-center">
+							<h3>Recent News</h3>
+							<p>Some Recent News from Blog</p>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-8">
+						<div class="blog-post">
+							<div class="post-meta">
+								<span class="author"><a href="#"><img src="img/author.jpg" alt=""> Raju Ahmmed</a></span>,
+								<span>Posted in <a href="#">WordPress</a></span>,
+								<span>At <strong>10 January, 2015</strong></span>
+							</div>
+							<h2 class="post-title"><a href="#">A example blog post with image</a></h2>
+							<div class="post-thumb"><a href="#"><img src="img/post-thumb.jpg" alt="" class="img-responsive"></a></div>
+							<div class="post-content">
+								<p>Torquatos nihil utuntur liberamur benivole epularum evertunt accommodare, democrito didicerimus occulta egregios, praeclaram familiaritatem novi accusamus delectus opinemur mutae expetenda perpauca eas, concederetur fecerit ignorare delectari industria patientiamque. Invenire probes contereret maior opinor iucundo inciderint depravate, concupiscunt, deorum didicerimus, solitudo ingeniis confectum attento illustribus. Quanta suam, quieti usu necessarius. Sapienter existimo fruenda contentiones deduceret dolere minuti animi scientia, inbecilloque servire evertunt. Exeduntur vivi laudatum dicitur omnia verterem fuerit inanitate efficiatur <a href="#" class="more-link">Continue reading <span class="meta-nav">&rarr;</span></a></p>
+							</div>
+						</div>
+						<div class="blog-post">
+							<div class="post-meta">
+								<span class="author"><a href="#"><img src="img/author.jpg" alt=""> Raju Ahmmed</a></span>,
+								<span>Posted in <a href="#">WordPress</a></span>,
+								<span>At <strong>10 January, 2015</strong></span>
+							</div>
+							<h2 class="post-title"><a href="#">A example blog post with image</a></h2>
+							<div class="post-thumb"><a href="#"><img src="img/post-thumb.jpg" alt="" class="img-responsive"></a></div>
+							<div class="post-content">
+								<p>Torquatos nihil utuntur liberamur benivole epularum evertunt accommodare, democrito didicerimus occulta egregios, praeclaram familiaritatem novi accusamus delectus opinemur mutae expetenda perpauca eas, concederetur fecerit ignorare delectari industria patientiamque. Invenire probes contereret maior opinor iucundo inciderint depravate, concupiscunt, deorum didicerimus, solitudo ingeniis confectum attento illustribus. Quanta suam, quieti usu necessarius. Sapienter existimo fruenda contentiones deduceret dolere minuti animi scientia, inbecilloque servire evertunt. Exeduntur vivi laudatum dicitur omnia verterem fuerit inanitate efficiatur <a href="#" class="more-link">Continue reading <span class="meta-nav">&rarr;</span></a></p>
+							</div>
+						</div>
+						<div class="blog-post">
+							<div class="post-meta">
+								<span class="author"><a href="#"><img src="img/author.jpg" alt=""> Raju Ahmmed</a></span>,
+								<span>Posted in <a href="#">WordPress</a></span>,
+								<span>At <strong>10 January, 2015</strong></span>
+							</div>
+							<h2 class="post-title"><a href="#">A example blog post without image</a></h2>
+							<div class="post-content">
+								<p>Torquatos nihil utuntur liberamur benivole epularum evertunt accommodare, democrito didicerimus occulta egregios, praeclaram familiaritatem novi accusamus delectus opinemur mutae expetenda perpauca eas, concederetur fecerit ignorare delectari industria patientiamque. Invenire probes contereret maior opinor iucundo inciderint depravate, concupiscunt, deorum didicerimus, solitudo ingeniis confectum attento illustribus. Quanta suam, quieti usu necessarius. Sapienter existimo fruenda contentiones deduceret dolere minuti animi scientia, inbecilloque servire evertunt. Exeduntur vivi laudatum dicitur omnia verterem fuerit inanitate efficiatur <a href="#" class="more-link">Continue reading <span class="meta-nav">&rarr;</span></a></p>
+
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div class="widgets">
+							<div class="widget">
+								<form action="" class="">
+									<div class="input-group">
+										<input type="text" class="form-control" placeholder="Search...">
+										<span class="input-group-btn">
+											<button class="btn btn-default btn-lg" type="submit"><i class="fa fa-search"></i></button>
+										</span>
+									</div>
+								</form>
+							</div>
+							<div class="widget">
+								<h2 class="widget-title">Categories</h2>
+								<ul>
+									<li><a href="#">Video <span class="badge pull-right">5</span></a></li>
+									<li><a href="#">Flyer <span class="badge pull-right">7</span></a></li>
+									<li><a href="#">PSD <span class="badge pull-right">2</span></a></li>
+									<li><a href="#">Theme <span class="badge pull-right">6</span></a></li>
+									<li><a href="#">Music <span class="badge pull-right">8</span></a></li>
+									<li><a href="#">Bootstrap <span class="badge pull-right">2</span></a></li>
+									<li><a href="#">WordPress <span class="badge pull-right">9</span></a></li>
+									<li><a href="#">Framework <span class="badge pull-right">7</span></a></li>
+								</ul>
+							</div>
+							<div class="widget">
+								<h2 class="widget-title">Recent Post</h2>
+								<ul>
+									<li>
+										<div class="recent-post clearfix">
+											<a href="#" class="post-thumb"><img src="img/post-thumb-sm.jpg"></a>
+											<h2 class="post-title">
+												<a href="#">A example blog post with image</a>
+											</h2>
+											<div class="post-meta">
+												<span>Posted in <a href="#">WordPress</a></span>
+											</div>
+											
+										</div>
+									</li>
+									<li>
+										<div class="recent-post clearfix">
+											<a href="#" class="post-thumb"><img src="img/post-thumb-sm.jpg"></a>
+											<h2 class="post-title">
+												<a href="#">A example blog post with image</a>
+											</h2>
+											<div class="post-meta">
+												<span>Posted in <a href="#">WordPress</a></span>
+											</div>
+											
+										</div>
+									</li>
+									<li>
+										<div class="recent-post clearfix">
+											<a href="#" class="post-thumb"><img src="img/post-thumb-sm.jpg"></a>
+											<h2 class="post-title">
+												<a href="#">A example blog post with image</a>
+											</h2>
+											<div class="post-meta">
+												<span>Posted in <a href="#">WordPress</a></span>
+											</div>
+											
+										</div>
+									</li>
+									<li>
+										<div class="recent-post clearfix">
+											<a href="#" class="post-thumb"><img src="img/post-thumb-sm.jpg"></a>
+											<h2 class="post-title">
+												<a href="#">A example blog post with image</a>
+											</h2>
+											<div class="post-meta">
+												<span>Posted in <a href="#">WordPress</a></span>
+											</div>
+											
+										</div>
+									</li>
+								</ul>
+							</div>
+							<div id="tag_cloud-3" class="widget widget_tag_cloud">
+								<h2 class="widget-title">Tags</h2>
+								<div class="tagcloud">
+									<a href="#">bootstrap3</a>
+									<a href="#">css</a>
+									<a href="#">html</a>
+									<a href="#">js</a>
+									<a href="#">php</a>
+									<a href="#">wordpress</a>
+									<a href="#">jquery</a>
+									<a href="#">less</a>
+									<a href="#">editor</a>
+									<a href="#">responsive</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		
+		<section class="subscribe">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<h3 class="subscribe-title">Subscribe Newsletter</h3>
+						<form  role="form" class="subscribe-form">
+							<div class="input-group">
+								<input type="email" class="form-control" id="mc-email" placeholder="Enter E-mail...">
+								<span class="input-group-btn">
+									<button class="btn btn-main btn-lg" type="submit">Subscribe!</button>
+								</span>
+							</div>
+						</form>
+						<div class="subscribe-result"></div>
+						<p class="subscribe-or">or</p>
+						<ul class="subscribe-social">
+							<li><a href="#" class="social twitter"><i class="fa fa-twitter"></i> Follow</a></li>
+							<li><a href="#" class="social facebook"><i class="fa fa-facebook"></i> Like</a></li>
+							<li><a href="#" class="social rss"><i class="fa fa-rss"></i> RSS</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</section>
+		<script src="js/jquery.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/jquery.easing.min.js"></script><!--该插件可以实现直线匀速运功、变加速运动、缓冲等丰富的动画效果。-->
+		<script src="js/jquery.stellar.js"></script><!--视差滚动是当用户滚动页面时，前景和背景以不同的速度移动，从而创造出3D效果。-->
+		<script src="js/jquery.appear.js"></script><!--页面滚动加载？？-->
+		<script src="js/jquery.nicescroll.min.js"></script> <!--滚动条插件-->
+		<script src="js/jquery.countTo.js"></script>
+		<script src="js/jquery.shuffle.modernizr.js"></script>
+		<script src="js/jquery.shuffle.js"></script>
+		<script src="js/owl.carousel.js"></script> <!--幻灯片插件-->
+		<script src="js/jquery.ajaxchimp.min.js"></script>
+		<!--<script src="js/script.js"></script>-->
+		<script src="js/index.js" type="text/javascript" charset="utf-8"></script>
+	</body>
+</html>
